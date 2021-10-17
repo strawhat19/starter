@@ -1,9 +1,79 @@
+
+:root {
+    --blue: #3F8EFC;
+    --green: #2CA58D;
+    --violet: #534B62;
+    --purple: #A782B0;
+    --darkViolet: #1B1725;
+}
+
 body {
-   background: #780f0f;
-   color: white;
+    background: var(--green);
+    color: white;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
 }
 
 // Classes
-.newButton {
-    background: lightblue;
+h1 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 4em;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh; 
+}
+
+.startGame {
+    margin: 0 0 3em 0;
+}
+
+.gameButton {
+    background: var(--blue);
+    color: white;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: none;
+}
+
+.gameButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3em;
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+}
+
+.selections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.userVComputer {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
