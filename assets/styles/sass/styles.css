@@ -54,6 +54,14 @@ h1 {
   padding: 1em 3em;
   border-radius: 5px;
   border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.gameButton:hover {
+  background: var(--purple);
 }
 
 .gameButtons {
